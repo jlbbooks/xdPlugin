@@ -197,7 +197,7 @@ class Pin {
 
   @override
   int get hashCode =>
-      hashValues(start, startFraction, end, endFraction, size, middle);
+      Object.hash(start, startFraction, end, endFraction, size, middle);
 
   String toString() {
     return "Pin(start: $start, startFraction: $startFraction, end: $end, endFraction: $endFraction, size: $size, middle: $middle, )";
